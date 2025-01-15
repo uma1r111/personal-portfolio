@@ -29,7 +29,7 @@ const Home = () => {
               <motion.span
                 className={darkMode ? "block text-black" : " text-white"}
               >
-                Hi, I am Aakash
+                Hi, I am Umair
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
                 <Typical
