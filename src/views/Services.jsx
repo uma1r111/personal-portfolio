@@ -38,11 +38,11 @@ const Services = () => {
             <img
               src={marketingImage}
               alt="Pixel Pulse"
-              className="rounded-2xl border border-gray-300 w-full md:w-1/2 lg:w-1/3"
+              className="rounded-2xl w-full md:w-1/2 lg:w-1/3"
             />
           </div>
           {/* Text Container */}
-          <div className="text-container flex-1 p-6 bg-white rounded-2xl border border-gray-300 shadow-lg">
+          <div className="text-container flex-1 p-6 bg-white rounded-2xl shadow-lg">
             <p className="text-base leading-7 text-justify text-gray-800">
               Pixel Pulse is a dynamic marketing agency I co-founded, dedicated
               to driving growth through innovative digital marketing strategies

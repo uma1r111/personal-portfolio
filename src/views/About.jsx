@@ -49,17 +49,17 @@ const About = () => {
             </p>
           </motion.div>
           <motion.div>
-            <h4 className="mt-12 text-3xl font-bold text-500 text-center">
+            {/* <h4 className="mt-12 text-3xl font-bold text-500 text-center">
               Technologies and Tools
-            </h4>
-            {/* <h1
+            </h4> */}
+            <h1
               className={classNames(
-                "text-3xl font-bold text-center mt-5",
+                "text-3xl font-bold text-center mt-12",
                 darkMode ? "text-black" : "text-white"
               )}
             >
               Technologies and Tools
-            </h1> */}
+            </h1>
             <p
               className={
                 darkMode
