@@ -29,7 +29,7 @@ const Projects = () => {
                 >
                   Projects
                 </h1>
-        <div className="mt-8 flex justify-between items-stretch flex-wrap">
+        <div className="mt-12 flex justify-between items-stretch flex-wrap">
           <Card />
           <Card />
           <Card />
