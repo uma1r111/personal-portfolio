@@ -6,6 +6,7 @@ import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
+import resume from "../assets/Shaikh-M-Umair-resume.pdf";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -32,10 +33,7 @@ const Home = () => {
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
                 <Typical
-                  steps={[
-                    "3rd Year CS Student at IBA",
-                    1000,
-                  ]}
+                  steps={["3rd Year CS Student at IBA", 1000]}
                   loop={Infinity}
                 />
               </span>
@@ -55,19 +53,26 @@ const Home = () => {
                 <a
                   href={el.link}
                   className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                  <img
+                    alt={`${el.name} logo`}
+                    src={el.url}
+                    style={{ width: "40px", height: "40px" }}
+                  />
                 </a>
               ))}
             </div>
+
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <a
-                  href="/resume/Shaikh-M-Umair-resume.pdf"
+                  href={resume}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
+                >
                   Resume
                 </a>
               </div>

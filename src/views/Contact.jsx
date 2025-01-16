@@ -128,10 +128,15 @@ const Contact = () => {
               {contactLinks.map((el) => (
                 <a
                   href={el.link}
-                  className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
+                  className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                  <img
+                    alt={`${el.name} logo`}
+                    src={el.url}
+                    style={{ width: "40px", height: "40px" }}
+                  />
                 </a>
               ))}
             </ul>
