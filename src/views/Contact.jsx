@@ -123,7 +123,7 @@ const Contact = () => {
               <br />
               India
             </a>
-            <h1 className="text-3xl  font-bold">Social</h1>
+            <h1 className="text-3xl  font-bold">Contact</h1>
             <ul className="flex">
               {contactLinks.map((el) => (
                 <a
