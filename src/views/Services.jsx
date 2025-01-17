@@ -9,7 +9,7 @@ const Services = () => {
 
   return (
     <section
-      id="marketing"
+      id="services"
       className={classNames("pb-20", {
         "bg-gray-100": darkMode,
         "bg-black": !darkMode,
@@ -32,7 +32,7 @@ const Services = () => {
         >
           Pixel Pulse
         </h1>
-        <div className="section-container flex flex-col md:flex-row items-center justify-center gap-10 mt-12">
+        <div className="section-container md:flex-row items-center justify-center gap-10 mt-12">
           {/* Image Container */}
           <div className="section__pic-container flex-shrink-0">
             <img
