@@ -32,17 +32,9 @@ const Services = () => {
         >
           Pixel Pulse
         </h1>
-        <div className="section-container md:flex-row items-center justify-center gap-10 mt-12">
-          {/* Image Container */}
-          <div className="section__pic-container flex-shrink-0">
-            <img
-              src={marketingImage}
-              alt="Pixel Pulse"
-              className="rounded-2xl w-full md:w-1/2 lg:w-1/3"
-            />
-          </div>
+        <div className="section-container md:flex md:items-center md:gap-20 mt-12 flex-wrap">
           {/* Text Container */}
-          <div className="text-container flex-1 p-6 bg-white rounded-2xl shadow-lg">
+          <div className="text-container p-6 bg-white rounded-2xl shadow-lg flex-1">
             <p className="text-base leading-7 text-justify text-gray-800">
               Pixel Pulse is a dynamic marketing agency I co-founded, dedicated
               to driving growth through innovative digital marketing strategies
@@ -57,7 +49,7 @@ const Services = () => {
               collaborated with Khaadi twice on their Kreate Your Mark campaign,
               which focuses on empowering female entrepreneurs.
             </p>
-            <div className="btn-container mt-6">
+            <div className="btn-container flex justify-center mt-6">
               <button
                 className="px-6 py-3 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition"
                 aria-label="Visit Pixel Pulse on Instagram"
@@ -72,6 +64,15 @@ const Services = () => {
                 Instagram
               </button>
             </div>
+          </div>
+
+          {/* Image Container */}
+          <div className="image-container max-w-xs flex-1">
+            <img
+              src={marketingImage}
+              alt="Pixel Pulse Marketing"
+              className="w-full h-auto rounded-2xl shadow-lg"
+            />
           </div>
         </div>
       </div>

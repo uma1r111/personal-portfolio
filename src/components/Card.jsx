@@ -55,3 +55,27 @@ const Card = ({ title, description, image, link, extraLink, extraLabel }) => {
 };
 
 export default Card;
+
+{
+  /* Image Container */
+}
+{
+  /* <div className="section__pic-container flex-shrink-0">
+            <img
+              src={marketingImage}
+              alt="Pixel Pulse"
+              className="rounded-2xl w-full md:w-1/2 lg:w-1/3"
+            />
+          </div> */
+}
+
+{
+  /* Image Container */
+}
+//  <div className="section__pic-container flex-shrink-0">
+//   <img
+//     src={marketingImage}
+//     alt="Pixel Pulse"
+//     className="rounded-2xl w-full md:w-1/2 lg:w-1/3"
+//   />
+// </div>;
