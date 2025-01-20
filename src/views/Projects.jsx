@@ -10,8 +10,8 @@ import project4Img from "../assets/project4.png";
 import project5Img from "../assets/project5.png";
 import project6Img from "../assets/project6.png";
 
-import notebook1 from "../assets/Sarima & LSTM.pdf"
-import notebook2 from "../assets/Best-SUBMISSION KAGGLE COMP 2.pdf"
+import notebook1 from "../assets/Sarima & LSTM.pdf";
+import notebook2 from "../assets/Best-SUBMISSION KAGGLE COMP 2.pdf";
 
 const Projects = () => {
   const theme = useContext(ThemeContext);
@@ -30,7 +30,8 @@ const Projects = () => {
     },
     {
       title: "House Price Forecasting Kaggle",
-      description: "I participated in a machine learning competition to predict house prices. I fixed errors in features, filled missing data using patterns in addresses, and tackled two key tasks: determining macroeconomic influences and location-specific factors. By scaling prices and employing cross-validation, I improved model accuracy. Residual analysis helped refine models and correct data, securing 5th place for my batch.",
+      description:
+        "I participated in a machine learning competition to predict house prices. I fixed errors in features, filled missing data using patterns in addresses, and tackled two key tasks: determining macroeconomic influences and location-specific factors. By scaling prices and employing cross-validation, I improved model accuracy. Residual analysis helped refine models and correct data, securing 5th place for my batch.",
       image: project2Img,
       link: "https://github.com/uma1r111/House-Price-Forecasting-Kaggle",
       extraLink: notebook2,
@@ -38,35 +39,39 @@ const Projects = () => {
     },
     {
       title: "Student-Lawyer Library",
-      description: "A full-stack database project using MySQL instead of MERN, featuring a student-lawyer model. Students can request lawyers to add cases, bookmark them, and search by category. Lawyers receive notifications, manage cases, and upload updates. Implemented JWT authentication for secure access for both students and lawyers. Implemented Super-Admin role for overall control of the student-lawyer interaction.",
+      description:
+        "A full-stack database project using MySQL instead of MERN, featuring a student-lawyer model. Students can request lawyers to add cases, bookmark them, and search by category. Lawyers receive notifications, manage cases, and upload updates. Implemented JWT authentication for secure access for both students and lawyers. Implemented Super-Admin role for overall control of the student-lawyer interaction.",
       image: project3Img,
       link: "https://github.com/user/project3",
-      extraLink:"https://demo.project2.com",
-      extraLabel:"View Demo"
+      extraLink: "https://demo.project2.com",
+      extraLabel: "View Demo",
     },
     {
       title: "Yes-Only Button",
-      description: "A fun and interactive-over the weekend-JavaScript project with a playful red theme. The No button always dodges when hovered over, leaving Yes as the only clickable option. It allows customization of themes to suit different occasions, and users can add cute stickers for a personalized touch. This creative and light-hearted project is perfect for apologies, playful invitations, or even fun surprises.",
+      description:
+        "A fun and interactive-over the weekend-JavaScript project with a playful red theme. The No button always dodges when hovered over, leaving Yes as the only clickable option. It allows customization of themes to suit different occasions, and users can add cute stickers for a personalized touch. This creative and light-hearted project is perfect for apologies, playful invitations, or even fun surprises.",
       image: project4Img,
       link: "https://github.com/uma1r111/your-crush",
-      extraLink:"https://demo.project2.com",
-      extraLabel:"View Demo"
+      extraLink: "https://demo.project2.com",
+      extraLabel: "View Demo",
     },
     {
       title: "Personal Portfolio Website",
-      description: "A responsive JavaScript portfolio showcasing my skills, tools, and technologies, along with featured projects. It includes a dedicated marketing section for my startup, Pixel Pulse, highlighting my expertise in marketing and innovation. Fully optimized for mobile devices, the portfolio also features a dark mode option, allowing the website to adapt seamlessly to user preferences for a modern and accessible browsing experience. ",
+      description:
+        "A responsive JavaScript portfolio showcasing my skills, tools, and technologies, along with featured projects. It includes a dedicated marketing section for my startup, Pixel Pulse, highlighting my expertise in marketing and innovation. Fully optimized for mobile devices, the portfolio also features a dark mode option, allowing the website to adapt seamlessly to user preferences for a modern and accessible browsing experience. ",
       image: project5Img,
       link: "https://github.com/uma1r111/personal-portfolio",
-      extraLink:"https://demo.project2.com",
-      extraLabel:"View Demo"
+      extraLink: "https://demo.project2.com",
+      extraLabel: "View Demo",
     },
     {
       title: "Flappy Bird (Machine Learning)",
-      description: "A Flappy Bird game recreated to dive deeper into Machine Learning after completing my coursework. Through this project, I explored automation by implementing Unsupervised (Genetic Algorithm), Supervised (Logistic Regression), and Reinforcement Learning (Q-Learning). These ML concepts enhanced my understanding of how AI adapts and optimizes decision-making in real-time environments.",
+      description:
+        "A Flappy Bird game recreated to dive deeper into Machine Learning after completing my coursework. Through this project, I explored automation by implementing Unsupervised (Genetic Algorithm), Supervised (Logistic Regression), and Reinforcement Learning (Q-Learning). These ML concepts enhanced my understanding of how AI adapts and optimizes decision-making in real-time environments.",
       image: project6Img,
       link: "https://github.com/user/project6",
-      extraLink:"https://demo.project2.com",
-      extraLabel:"View Demo"
+      extraLink: "https://demo.project2.com",
+      extraLabel: "View Demo",
     },
   ];
 
@@ -75,7 +80,7 @@ const Projects = () => {
       id="projects"
       className={darkMode ? "bg-white text-black" : "bg-gray-900 text-white"}
     >
-      <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 pt-24 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
         <p
           className={classNames(
             "text-lg text-center",
@@ -92,7 +97,8 @@ const Projects = () => {
         >
           Projects
         </h1>
-        <div className="mt-12 flex justify-between items-stretch flex-wrap gap-8">
+        {/* Use Grid for layout */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {/* Render a Card for each project */}
           {projects.map((project, index) => (
             <Card
@@ -101,8 +107,8 @@ const Projects = () => {
               description={project.description}
               image={project.image}
               link={project.link}
-              extraLink={project.extraLink} // Pass extraLink to Card
-              extraLabel={project.extraLabel} // Pass extraLabel to Card
+              extraLink={project.extraLink}
+              extraLabel={project.extraLabel}
             />
           ))}
         </div>

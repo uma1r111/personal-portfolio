@@ -16,6 +16,7 @@ const Services = () => {
       })}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+        {/* Section Title */}
         <p
           className={classNames(
             "text-lg text-center",
@@ -27,14 +28,16 @@ const Services = () => {
         <h1
           className={classNames(
             "text-5xl font-bold text-center mt-4",
-            darkMode ? "text-black" : "text-white"
+            darkMode ? "text-gray-900" : "text-white"
           )}
         >
           Pixel Pulse
         </h1>
-        <div className="section-container md:flex md:items-center md:gap-20 mt-12 flex-wrap">
+
+        {/* Content */}
+        <div className="md:flex md:items-center md:gap-20 mt-12 flex-wrap">
           {/* Text Container */}
-          <div className="text-container p-6 bg-white rounded-2xl shadow-lg flex-1">
+          <div className="p-6 bg-white rounded-2xl shadow-lg flex-1">
             <p className="text-base leading-7 text-justify text-gray-800">
               Pixel Pulse is a dynamic marketing agency I co-founded, dedicated
               to driving growth through innovative digital marketing strategies
@@ -46,32 +49,29 @@ const Services = () => {
             <p className="text-base leading-7 text-justify text-gray-800 mt-4">
               We also work closely with small-scale and micro-businesses that
               need support to grow. Through our client Auralin Glow, we have
-              collaborated with Khaadi twice on their Kreate Your Mark campaign,
-              which focuses on empowering female entrepreneurs.
+              collaborated with Khaadi twice on their "Kreate Your Mark"
+              campaign, which focuses on empowering female entrepreneurs.
             </p>
-            <div className="btn-container flex justify-center mt-6">
-              <button
+            <div className="flex justify-center mt-6">
+              <a
+                href="https://www.instagram.com/pixelpulse.service/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition"
                 aria-label="Visit Pixel Pulse on Instagram"
-                onClick={() =>
-                  window.open(
-                    "https://www.instagram.com/pixelpulse.service/",
-                    "_blank",
-                    "noopener noreferrer"
-                  )
-                }
               >
-                Instagram
-              </button>
+                Visit Instagram
+              </a>
             </div>
           </div>
 
           {/* Image Container */}
-          <div className="image-container max-w-xs flex-1">
+          {/* Image Container */}
+          <div className="image-container p-4 bg-white rounded-2xl shadow-lg flex justify-center items-center flex-1 mt-5">
             <img
               src={marketingImage}
               alt="Pixel Pulse Marketing"
-              className="w-full h-auto rounded-2xl shadow-lg"
+              className="w-full h-auto rounded-lg"
             />
           </div>
         </div>
