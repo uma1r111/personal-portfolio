@@ -67,7 +67,10 @@ const Services = () => {
 
           {/* Image Container */}
           {/* Image Container */}
-          <div className="image-container p-4 bg-white rounded-2xl shadow-lg flex justify-center items-center flex-1 mt-5">
+          <div
+            className="image-container p-2 rounded-2xl shadow-lg flex justify-center items-center flex-1 mt-5"
+            style={{ backgroundColor: "#EA727B" }}
+          >
             <img
               src={marketingImage}
               alt="Pixel Pulse Marketing"
