@@ -11,7 +11,7 @@ import project5Img from "../assets/project5.png";
 import project6Img from "../assets/project6.png";
 
 import notebook1 from "../assets/Sarima & LSTM.pdf";
-import notebook2 from "../assets/Best-SUBMISSION KAGGLE COMP 2.pdf";
+import notebook2 from "../assets/Random Forest & Extra Tree.pdf";
 
 const Projects = () => {
   const theme = useContext(ThemeContext);
