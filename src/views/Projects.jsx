@@ -42,7 +42,7 @@ const Projects = () => {
       description:
         "A full-stack database project using MySQL instead of MERN, featuring a student-lawyer model. Students can request lawyers to add cases, bookmark them, and search by category. Lawyers receive notifications, manage cases, and upload updates. Implemented JWT authentication for secure access for both students and lawyers. Implemented Super-Admin role for overall control of the student-lawyer interaction.",
       image: project3Img,
-      link: "https://github.com/user/project3",
+      link: "https://github.com/uma1r111/student-lawyer-library",
       extraLink: "https://demo.project2.com",
       extraLabel: "View Demo",
     },
