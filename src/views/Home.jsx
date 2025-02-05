@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation"; 
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
@@ -32,23 +32,18 @@ const Home = () => {
                 Hi, I am Umair
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={["3rd Year CS Student at IBA", 1000]}
-                  loop={Infinity}
+                <TypeAnimation
+                  sequence={["3rd Year CS Student at IBA", 1000]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
                 />
               </span>
             </h1>
-            <p
-              className={
-                darkMode
-                  ? "mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-                  : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-              }
-            >
-            </p>
             <div className="flex md:justify-start ">
-              {contactLinks.map((el) => (
+              {contactLinks.map((el, index) => (
                 <a
+                  key={index}
                   href={el.link}
                   className="mr-3 cursor-pointer mt-8 hover:scale-125"
                   target="_blank"
@@ -62,7 +57,6 @@ const Home = () => {
                 </a>
               ))}
             </div>
-
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <a
