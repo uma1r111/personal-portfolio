@@ -65,11 +65,11 @@ const Projects = () => {
       extraLabel: "View Demo",
     },
     {
-      title: "Flappy Bird (Machine Learning)",
+      title: "Flappy Bird (NEAT Neural Network)",
       description:
-        "A Flappy Bird game recreated to dive deeper into Machine Learning after completing my coursework. Through this project, I explored automation by implementing Unsupervised (Genetic Algorithm), Supervised (Logistic Regression), and Reinforcement Learning (Q-Learning). These ML concepts enhanced my understanding of how AI adapts and optimizes decision-making in real-time environments.",
+        "A Flappy Bird game recreated to dive deeper into Machine Learning after completing my coursework. Through this project, I explored automation by implementing Genetic Algorithm - NeuroEvolution of Augmenting Topologies (NEAT) which creates artificial neural networks (ANNs) that uses evolution-like processes to generate networks. This enhanced my understanding of how AI adapts and optimizes decision-making in real-time",
       image: project6Img,
-      link: "https://github.com/user/project6",
+      link: "https://github.com/uma1r111/flappy-bird-AI",
       extraLink: "https://demo.project2.com",
       extraLabel: "View Demo",
     },
