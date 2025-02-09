@@ -61,7 +61,7 @@ const Projects = () => {
         "A responsive JavaScript portfolio showcasing my skills, tools, and technologies, along with featured projects. It includes a dedicated marketing section for my startup, Pixel Pulse, highlighting my expertise in marketing and innovation. Fully optimized for mobile devices, the portfolio also features a dark mode option, allowing the website to adapt seamlessly to user preferences for a modern and accessible browsing experience. ",
       image: project5Img,
       link: "https://github.com/uma1r111/personal-portfolio",
-      extraLink: "https://demo.project2.com",
+      extraLink: "https://shaikh-m-umair-portfolio.netlify.app/",
       extraLabel: "View Demo",
     },
     {
