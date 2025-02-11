@@ -52,7 +52,7 @@ const Projects = () => {
         "A fun and interactive-over the weekend-JavaScript project with a playful red theme. The No button always dodges when hovered over, leaving Yes as the only clickable option. It allows customization of themes to suit different occasions, and users can add cute stickers for a personalized touch. This creative and light-hearted project is perfect for apologies, playful invitations, or even fun surprises.",
       image: project4Img,
       link: "https://github.com/uma1r111/yes-only-button",
-      extraLink: "https://demo.project2.com",
+      extraLink: "https://yes-only-button.netlify.app/",
       extraLabel: "View Demo",
     },
     {
