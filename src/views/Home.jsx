@@ -6,7 +6,7 @@ import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
-import resume from "../assets/Shaikh-M-Umair-resume.pdf";
+import resume from "../assets/Shaikh_M_Umair_resume.pdf";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
